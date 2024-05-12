@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>J.A.R.V.I.S.</h1>
+        <button onclick="startListening()">Говорите</button>
+        <div id="response"></div>
+        
+        <!-- Дополнительное поле ввода для названия города -->
+        <div id="weatherInput" style="display:none;">
+            <input type="text" id="cityName" placeholder="Введите название города">
+            <button onclick="getWeather()">Получить погоду</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
